@@ -65,7 +65,8 @@ local config = {
     configuration = {
       updateBuildConfiguration = "interactive",
       maven = {
-        userSettings = nil
+        --maven settings
+        userSettings = "C:/Users/bangsun/.m2/settings.xml"
       }
     },
     trace = {

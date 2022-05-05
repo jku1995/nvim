@@ -33,13 +33,16 @@ local options = {
   wrap = false                           , -- display lines as one long line
   scrolloff = 8                          , -- is one of my fav
   sidescrolloff = 8			                 ,
-  guifont ="FiraCode NF:h17"             , -- the font used in graphical neovim applications
+  --guifont ="FiraCode NF:h17"             , -- the font used in graphical neovim applications
+  guifont="更纱黑体 Mono SC Nerd:h16"    ,
   fileformats ="unix,dos"                , -- 移除windows使用format在尾部生成^M的行为
+  --shellslash = true                      , -- windows下路径使用「\」,unix使用「/」,此选项指定使用unix风格,这会让packer崩溃
+  laststatus=3 --@0.7 默认每个窗口都有一个底栏信息，设置此项所有窗口共用一个底栏
 }
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
 vim.opt.shortmess:append "c"
 vim.cmd "set whichwrap+=<,>,[,],h,l"
-vim.cmd [[set iskeyword+=-]]                    --word connect with '-' will be recognized one word 
+vim.cmd [[set iskeyword+=-]]                    --word connect with '-' will be recognized one word
 vim.cmd [[set formatoptions-=cro]]              -- TODO: this doesn't seem to work

@@ -108,6 +108,7 @@ cmp.setup {
         path = "[Path]",
         nvim_lua="[Api]",
         jdtls="[Java]",
+        bashls="[Bash]",
       })[entry.source.name]
       return vim_item
     end,
@@ -119,13 +120,16 @@ cmp.setup {
     { name = "nvim_lua" },
     { name = "nvim_lsp" },
     { name = "jdtls" },
+    { name = "bashls"},
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,
   },
-  documentation = {
+  window ={
+    documentation = {
     border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+    },
   },
   experimental = {
     ghost_text = false,

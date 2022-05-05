@@ -74,6 +74,12 @@ _G.packer_plugins = {
     path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["alpha-nvim"] = {
+    config = { "\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0" },
+    loaded = true,
+    path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
@@ -146,6 +152,21 @@ _G.packer_plugins = {
     path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-ts-rainbow"] = {
+    loaded = true,
+    path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-rainbow",
+    url = "https://github.com/p00f/nvim-ts-rainbow"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -171,10 +192,15 @@ _G.packer_plugins = {
     path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
   ["vim-closer"] = {
     loaded = true,
     path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-closer",
-    url = "https://github.com/9mm/vim-closer"
+    url = "https://github.com/rstacruz/vim-closer"
   },
   ["vim-matchup"] = {
     after_files = { "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\vim-matchup\\after\\plugin\\matchit.vim" },
@@ -184,6 +210,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\vim-matchup",
     url = "https://github.com/andymass/vim-matchup"
   },
+  ["vim-translator"] = {
+    loaded = true,
+    path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-translator",
+    url = "https://github.com/voldikss/vim-translator"
+  },
   vimcdoc = {
     loaded = true,
     path = "C:\\Users\\bangsun\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vimcdoc",
@@ -192,13 +223,17 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType lua ++once lua require("packer.load")({'cmp-nvim-lua'}, { ft = "lua" }, _G.packer_plugins)]]
-vim.cmd [[au FileType java ++once lua require("packer.load")({'nvim-jdtls'}, { ft = "java" }, _G.packer_plugins)]]
 vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
+vim.cmd [[au FileType java ++once lua require("packer.load")({'nvim-jdtls'}, { ft = "java" }, _G.packer_plugins)]]
+vim.cmd [[au FileType lua ++once lua require("packer.load")({'cmp-nvim-lua'}, { ft = "lua" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)

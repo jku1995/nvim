@@ -11,6 +11,13 @@ require("nvim-tree-config")
 require("which-key-config")
 --telecope
 require("telescope-config")
-vim.cmd('color nord')
+--cmp
+require("cmp-config")
+--require("lsp-config")
+--theme
+vim.cmd("color nord")
+--lspinstaller
+--require("nvim-lsp-installer")
 --vim.cmd("FileType nerdtree setlocal nolist")
 --vim.g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
+

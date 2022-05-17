@@ -9,6 +9,8 @@ require("bufferline-config")
 require("nvim-tree-config")
 --which key
 require("which-key-config")
+--telecope
+require("telescope-config")
 vim.cmd('color nord')
 --vim.cmd("FileType nerdtree setlocal nolist")
 --vim.g:WebDevIconsNerdTreeAfterGlyphPadding = '  '

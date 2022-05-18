@@ -13,11 +13,11 @@ require("which-key-config")
 require("telescope-config")
 --cmp
 require("cmp-config")
---require("lsp-config")
 --theme
+--lsp--
+require("lspconfig")
 vim.cmd("color nord")
 --lspinstaller
 --require("nvim-lsp-installer")
 --vim.cmd("FileType nerdtree setlocal nolist")
 --vim.g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
-

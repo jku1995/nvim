@@ -38,26 +38,22 @@ return require('packer').startup(function()
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
+--lsp--
+use {"williamboman/nvim-lsp-installer",
+{
+use "neovim/nvim-lspconfig",
+config = require("lsp-config")
+}
+}
 -----------
 ----cmp----
 -----------
-use {
-    "williamboman/nvim-lsp-installer",
-    {
-        "neovim/nvim-lspconfig",
-        config = function()
-            require("nvim-lsp-installer").setup {}
-            local lspconfig = require("lspconfig")
-            lspconfig.sumneko_lua.setup {}
-        end
-    }
-}
 use 'hrsh7th/cmp-nvim-lsp'
 use 'hrsh7th/cmp-buffer'
 use 'hrsh7th/cmp-path'
 use 'hrsh7th/cmp-cmdline'
 use 'hrsh7th/nvim-cmp'
--- For luasnip users.
-use 'L3MON4D3/LuaSnip'
 use 'saadparwaiz1/cmp_luasnip'
+-- lua写的snippet引擎
+use 'L3MON4D3/LuaSnip'
 end)

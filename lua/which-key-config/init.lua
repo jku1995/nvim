@@ -46,7 +46,7 @@ wk.setup {
 --  * <leader>fn new file
 --  * <leader>fe edit file
 -- and hide <leader>1
-local mappings ={
+local nmappings ={
   name="NORMAL",
   q={":q<CR>","Quit"},
   w={":w<CR>","Save"},
@@ -56,14 +56,26 @@ local mappings ={
   g={":lua require('telescope.builtin').live_grep()<cr>","Live grep"},
   b={":lua require('telescope.builtin').buffers()<cr>","List buffers"},
   h={":lua require('telescope.builtin').help_tags()<cr>","Help"},
+  t={":<c-u>Translate ZH -source=EN -output=floating<cr>","EN-ZH"},
+  r={":<c-u>Translate EN -source=ZH -output=floating<cr>","ZH-EN"}
 }
-local opts = {
+local nopts = {
  prefix = "<leader>",
  }
-wk.register(mappings,opts)
+local xmappings={
+  t={":Translate ZH -source=EN -output=floating<cr>","EN-ZH"},
+  r={":Translate EN -source=ZH -output=floating<cr>","ZH-EN"}
+}
+local xopts = {
+  mode="x",
+  prefix = "<leader>",
+}
+wk.register(nmappings,nopts)
+wk.register(xmappings,xopts)
 --wk.register({
 --  ["<C-t>"] = {
 --      ":Telescope live_grep<cr>",
 --      "live_grep"
 --  }
 --})
+

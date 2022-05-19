@@ -13,8 +13,11 @@ require("which-key-config")
 require("telescope-config")
 --cmp
 require("cmp-config")
+--translate
+require("translate-config")
 --theme
 vim.cmd("color nord")
+
 --lspinstaller
 --require("nvim-lsp-installer")
 --vim.cmd("FileType nerdtree setlocal nolist")

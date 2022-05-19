@@ -56,6 +56,8 @@ use 'hrsh7th/nvim-cmp'
 use 'saadparwaiz1/cmp_luasnip'
 -- lua写的snippet引擎
 use 'L3MON4D3/LuaSnip'
+-- 翻译插件
+use 'uga-rosa/translate.nvim'
 -- 离线词典vimscript编写
 --use 'sicong-li/T.vim'
 end)

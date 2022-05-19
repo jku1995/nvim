@@ -77,10 +77,10 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 --------Plug----------
 ----------------------
 
---telescope
+--telescope 使用whichkey的配置
 --keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+--keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
---nvim-tree
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+--nvim-tree 使用whichkey
+--keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 

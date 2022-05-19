@@ -1,7 +1,7 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
+--vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
   --vim中文手册
@@ -56,4 +56,6 @@ use 'hrsh7th/nvim-cmp'
 use 'saadparwaiz1/cmp_luasnip'
 -- lua写的snippet引擎
 use 'L3MON4D3/LuaSnip'
+-- 离线词典vimscript编写
+--use 'sicong-li/T.vim'
 end)

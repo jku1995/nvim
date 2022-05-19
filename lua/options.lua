@@ -17,8 +17,8 @@ local options = {
   splitbelow = true                      , -- 强制水平split在当前窗口下产生新窗口
   splitright = true                      , -- 强制垂直split在当前窗口右侧产生新窗口
   swapfile = false                       , -- creates a swapfile
-  termguicolors = true        ,            -- 设置term gui支持256色 (most terminals support this)
-  timeoutlen = 1000                      , -- time to wait for a mapped sequence to complete (in milliseconds)
+  termguicolors = true                   , -- 设置term gui支持256色 (most terminals support this)
+  timeoutlen = 200                       , -- 等待窗口弹出的时间，单位毫秒
   undofile = true                        , -- enable persistent undo
   updatetime = 300                       , -- faster completion (4000ms default)
   writebackup = false                    , -- 如果文件被其他程序占用，则不允许编辑if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
@@ -38,7 +38,6 @@ local options = {
   whichwrap="b,s,<,>,[,],h,l"            , --设置匹配包含符号，使用%可以在包含符号间切换
   hidden=true                            , --是否允许隐藏一个未保存的buffer
   autoindent=true                        , --自动缩进,通常打开smartindent也应打开autoindent
-  timeoutlen=200
 }
 for k, v in pairs(options) do
   vim.opt[k] = v

@@ -14,8 +14,6 @@ require("telescope-config")
 --cmp
 require("cmp-config")
 --theme
---lsp--
-require("lspconfig")
 vim.cmd("color nord")
 --lspinstaller
 --require("nvim-lsp-installer")

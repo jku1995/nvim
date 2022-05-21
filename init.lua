@@ -4,7 +4,7 @@ require("keybindings")
 require("treesitter-config")
 --require("lualine-config")
 --buffer
-require("bufferline-config")
+--require("bufferline-config")
 --tree explorer
 require("nvim-tree-config")
 --telecope

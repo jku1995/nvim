@@ -27,7 +27,10 @@ use {
 --bufferline
 use {'akinsho/bufferline.nvim',
       tag = "v2.*",
-      requires = 'kyazdani42/nvim-web-devicons'}
+      event = "BufWinEnter",
+      requires = 'kyazdani42/nvim-web-devicons',
+      config = "require('bufferline-config')"
+    }
 --nvim-tree
 use {
   'kyazdani42/nvim-tree.lua',

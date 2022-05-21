@@ -23,8 +23,10 @@ use {
 --当运行TSUpdate才加载
 use {
       'nvim-treesitter/nvim-treesitter',
-      run = ':TSUpdate'
-  }
+      run = ":TSUpdate",
+      event = "BufWinEnter",
+      config = "require('treesitter-config')"
+    }
 --bufferline
 use {'akinsho/bufferline.nvim',
       tag = "v2.*",

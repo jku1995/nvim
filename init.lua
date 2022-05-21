@@ -1,7 +1,7 @@
 require("plugins")
 require("options")
 require("keybindings")
-require("treesitter-config")
+--require("treesitter-config")
 --require("lualine-config")
 --buffer
 --require("bufferline-config")

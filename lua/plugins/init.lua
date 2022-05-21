@@ -12,8 +12,11 @@ return require('packer').startup(function()
 use 'yianwillis/vimcdoc'
 --Packer包管理器
 use 'wbthomason/packer.nvim'
---Nord主题
-use 'shaunsingh/nord.nvim'
+--主题
+use { 'rose-pine/neovim',
+      config = "vim.cmd('colorscheme rose-pine')",
+    }
+
 use {
       'tamton-aquib/staline.nvim',
       requires = { 'kyazdani42/nvim-web-devicons', opt = true },

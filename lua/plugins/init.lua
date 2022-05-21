@@ -13,6 +13,12 @@ use 'yianwillis/vimcdoc'
 use 'wbthomason/packer.nvim'
 --Nord主题
 use 'shaunsingh/nord.nvim'
+use {
+      'tamton-aquib/staline.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+      event = "BufRead",
+      config = "require('staline-config')"
+    }
 --当运行TSUpdate才加载
 use {
       'nvim-treesitter/nvim-treesitter',

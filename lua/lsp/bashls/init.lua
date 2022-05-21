@@ -1,0 +1,1 @@
+lspconfig.bashls.setup{}

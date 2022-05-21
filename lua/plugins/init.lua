@@ -18,11 +18,6 @@ use {
       'nvim-treesitter/nvim-treesitter',
       run = ':TSUpdate'
   }
---lualine 底部增加一个状态栏 
-use {
-'nvim-lualine/lualine.nvim',
-requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-}
 --bufferline
 use {'akinsho/bufferline.nvim',
       tag = "v2.*",

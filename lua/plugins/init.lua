@@ -4,6 +4,7 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
+
 ----------
 --基础----
 ----------
@@ -55,11 +56,7 @@ use {
     "williamboman/nvim-lsp-installer",
     {
         "neovim/nvim-lspconfig",
-        config = function()
-            require("nvim-lsp-installer").setup {}
-            local lspconfig = require("lspconfig")
-            lspconfig.sumneko_lua.setup {}
-        end
+        config = "require('lsp-config')"
     }
 }
 use 'hrsh7th/cmp-nvim-lsp'

@@ -37,8 +37,8 @@ use {
 }
 --which key--
 use { 'folke/which-key.nvim',
-       vent = "BufWinEnter",
-       config = "require('whichkey-config')" }
+       config = "require('whichkey-config')"
+     }
 --telescope.nvim 望远镜
 use {
 'nvim-telescope/telescope.nvim',

@@ -7,8 +7,6 @@ require("lualine-config")
 require("bufferline-config")
 --tree explorer
 require("nvim-tree-config")
---which key
-require("which-key-config")
 --telecope
 require("telescope-config")
 --cmp

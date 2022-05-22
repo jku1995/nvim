@@ -72,4 +72,12 @@ use 'hrsh7th/nvim-cmp'
 -- For luasnip users.
 use 'L3MON4D3/LuaSnip'
 use 'saadparwaiz1/cmp_luasnip'
+----------
+---其他---
+----------
+--浏览器内置nvim
+use {
+    'glacambre/firenvim',
+    run = function() vim.fn['firenvim#install'](0) end
+}
 end)

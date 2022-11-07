@@ -5,7 +5,7 @@ local present, lspconfig = pcall(require, "lspconfig")
 if not present then
   return
 end
-local servers = {"clangd","rust_analyzer"}
+local servers = {"dockerls","clangd","rust_analyzer"}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {

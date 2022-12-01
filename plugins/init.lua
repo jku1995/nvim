@@ -1,17 +1,12 @@
-return {
-  ["nvim-tree/nvim-tree"] = {
-    overide_options = {
-       update_focused_file = {
-        enable = true,
-        update_root = true,
-      },
-    },
-  },
+local M = {}
+M = {
   -- We are just modifying lspconfig's packer definition table
-["neovim/nvim-lspconfig"] = {
+  ["neovim/nvim-lspconfig"] = {
     config = function()
---      require "plugins.configs.lspconfig"
+      require "plugins.configs.lspconfig"
       require "custom.plugins.lspconfig"
     end,
-},
+   },
+  ["kyazdani42/nvim-tree.lua"] = require("custom.plugins.override.nvim-tree")
 }
+return M

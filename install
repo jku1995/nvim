@@ -1,0 +1,11 @@
+#! /bin/bash
+set -e
+
+rm -rf ~/.config/nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+
+# ln -s $HOME/.config/nvchad/init.vim $HOME/.config/nvim/init.vim
+ln -s $HOME/.config/nvchad $HOME/.config/nvim/lua/custom
+git clone -b nvchad https://github.com/jku1995/nvim temp
+mv temp/.git ~/.config/nvchad/.git
+rm -rf temp

@@ -15,5 +15,12 @@ M = {
   },
   ["nvim-tree/nvim-tree.lua"] = { override_options = overrides.nvim_tree },
   ["nvim-treesitter/nvim-treesitter"] = { override_options = overrides.treesitter },
+  -- format & linting
+  ["jose-elias-alvarez/null-ls.nvim"] = {
+    after = "nvim-lspconfig",
+    config = function()
+      require "custom.plugins.null-ls"
+    end,
+  },
 }
 return M

@@ -15,6 +15,7 @@ M = {
   },
   ["nvim-tree/nvim-tree.lua"] = { override_options = overrides.nvim_tree },
   ["nvim-treesitter/nvim-treesitter"] = { override_options = overrides.treesitter },
+  ["williamboman/mason.nvim"] = { override_options = overrides.mason },
   -- format & linting
   ["jose-elias-alvarez/null-ls.nvim"] = {
     after = "nvim-lspconfig",

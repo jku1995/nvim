@@ -95,12 +95,13 @@ M.mason = {
     --"deno",
     -- "emmet-ls",
     "json-lsp",
-    "tailwindcss-language-server",
+    --"tailwindcss-language-server",
 
     -- shell
     "shfmt",
     "shellcheck",
     -- rust
+    "rustfmt",
     --java
   },
 }

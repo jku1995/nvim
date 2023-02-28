@@ -16,6 +16,8 @@ M.treesitter = {
     --"norg",
     "tsx",
     "typescript",
+    "rust",
+    "java",
   },
 }
 
@@ -26,7 +28,7 @@ M.nvim_tree = {
     -- define regex pattern not show in tree
     custom = { "node_modules" },
     -- define regex pattern show in tree
-    exclude = {".config",".local"}
+    exclude = { ".config", ".local" },
   },
 
   git = {
@@ -46,8 +48,8 @@ M.nvim_tree = {
   --respect_buf_cwd = true,
   update_focused_file = {
     enable = true,
-    update_root = true
-  }
+    update_root = true,
+  },
 }
 
 M.blankline = {
@@ -94,16 +96,22 @@ M.mason = {
     --"typescript-language-server",
     --"deno",
     -- "emmet-ls",
+
+    --json stuff
     "json-lsp",
     --"tailwindcss-language-server",
 
     -- shell
     "shfmt",
     "shellcheck",
+
     -- rust
+    "rust-analyzer",
     "rustfmt",
     --java
-  },
+    "jdtls",
+    "google_java_format",
+  }
 }
 
 return M

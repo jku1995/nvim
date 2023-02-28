@@ -21,13 +21,14 @@ local sources = {
   b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
 
   -- cpp
-  --b.formatting.clang_format,
+  b.formatting.clang_format,
   --rust
-  b.formatting.rustfmt
+  b.formatting.rustfmt,
+  --java
+  b.formatting.google_java_format
 }
 
 null_ls.setup {
   debug = true,
   sources = sources,
 }
-

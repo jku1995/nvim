@@ -23,5 +23,8 @@ M = {
       require "custom.plugins.null-ls"
     end,
   },
+  ["mfussenegger/nvim-jdtls"]={},
+  --dap
+  ["mfussenegger/nvim-dap"]= {}
 }
 return M

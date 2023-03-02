@@ -108,10 +108,13 @@ M.mason = {
     -- rust
     "rust-analyzer",
     "rustfmt",
+
     --java
     "jdtls",
     "google_java_format",
-  }
+    "java-debug-adapter",
+    "java-test",
+  },
 }
 
 return M

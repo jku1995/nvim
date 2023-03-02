@@ -10,7 +10,7 @@ local servers = { "clangd", "jsonls", "bashls", "rust_analyzer", "jdtls" }
 --自定义lsp配置
 local java = require "custom.lsp.java"
 lspconfig.jdtls.setup(java)
-
+-- TODO 等待完善dap后使用
 local on_attach = function(client, bufnr)
   lsp_config.on_attach(client, bufnr)
   if client.name == "jdtls" then
@@ -28,7 +28,7 @@ end
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
-    on_attach = on_attach,
+    on_attach = lspconfig.on_attach,
     capabilities = capabilities,
   }
 end

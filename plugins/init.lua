@@ -25,6 +25,6 @@ M = {
   },
   ["mfussenegger/nvim-jdtls"]={},
   --dap
-  ["mfussenegger/nvim-dap"]= {}
+  --["mfussenegger/nvim-dap"]= {}
 }
 return M
